@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            color:#333;
+        }
+        header{
+
+            background-color: #0f0f0f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            background-image: url(pexels-aravind-n-949291880-27894725.jpg);
+            background-size:cover ;
+             background-position: center;
+             height: 100vh;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+        }
+        header h1{
+            font-size: 3rem;
+            background: rgb(red, green, blue);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: solid;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+    nav a {
+        color: #efff;
+        text-decoration: solid;
+        font-weight: bold;
+        transition: color 0.5s;
+    }
+    nav a:hover{
+        color: #00bfff;
+    }
+    section{
+        padding: 60px;
+    }
+    .specs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #f4f4f4;
+
+    }
+    .specs-1{
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 6px 8px rgba(0 ,0,0,0.7);
+        margin: 15px;
+        padding: 20px;
+        width: 200px;
+    }
+    .spec-1:hover{
+        transform: scale(1.2);
+    }
+    .gallery{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .gallery.img{
+        width: 200px;
+        height : auto;
+        border-radius: 10px;
+
+    }
+    .gallery.img:hover{
+        transform: scale(1.2);
+    }
+    .video{
+        display: flex;
+        justify-content: center;
+
+    }
+    iframe{
+        width: 75%;
+        height: 300px;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#bikes">Bikes</a>
+        <a href="#specs">specifications</a>
+        <a href="#about">About</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact us</a>
+    </nav>
+    <header>
+        <h1>Welcome to Royal Enfield ShowRoom</h1>
+    </header>
+    <section id="specs" class="specs">
+       <div class="specs-1"> <h3>GT650</h3>
+        <h3>Engine: 648cc</h3>
+          <h3>Horse power: 47</h3>
+          <h3>Torque: 52Nm</h3>
+    </div>
+     <div  class="specs-1" > <h3>classic650</h3>
+        <h3>Engine: 748cc</h3>
+          <h3>Horse power: 57</h3>
+          <h3>Torque: 56Nm</h3>
+    </div>
+     <div class="specs-1"> <h3>Himalayan450</h3>
+        <h3>Engine: 411cc</h3>
+          <h3>Horse power: 39.47</h3>
+          <h3>Torque: 40Nm</h3>
+    </div>
+    </section>
+    <section id="bikes" class="gallery">
+        <img src="gt650.jpg" alt="bike 1">
+        <img src="classic650.avif" alt="bike 2" width="300px">
+        <img src="himalayan450.jpg" alt="bike 3">
+        <img src="4k gt.jpg" alt="bike 4">
+
+    </section>
+    <section id="video" class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Kvj0mjATXKU?si=pA7lAfEmKmZhFMX3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+</body>
+ 
